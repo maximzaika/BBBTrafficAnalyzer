@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <title>PIR Motion Sensor</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <script src = "/socket.io/socket.io.js"></script>
+  <script src = "jquery-1.11.1.js"></script>
+  <script src = "start_sensor.js"></script>
+
+  <body>
+    <div class="container">
+        <table class = 'center'>
+          <td><h3 class = "text">PIR Motion Sensor.</h3></td>
+        </table>
+
+        <table class="center">
+          <tr>
+            <td><h3 class = 'tile1'>Pedestrians</h3></td>
+            <td><h3 class = 'tile' id = "msg1"> </h3></td>
+          </tr>
+          <tr>
+            <td><h3 class = 'tile1'>Short</h3></td>
+            <td><h3 class = 'tile' id = "msg2"> </h3></td>
+          </tr>
+          <tr>
+          <td><h3 class = 'tile1'>Long</h3></td>
+          <td><h3 class = 'tile' id = "msg3"> </h3></td>
+          </tr>
+        </table>
+        <table class = 'center'>
+          <td><h3 class = "text" id = "notification"> </h3></td>
+        </table>
+        <table class = "center">
+          <p></p>
+          <td><button class = 'control' id = 'reset'>Reset Database</button></td>
+          <td><button class = 'control' id = 'toggle_led'>Toggle ON/OFF LED</button></td>
+          <td><button class = 'control' id = 'toggle_pir'>Toggle ON/OFF PIR</button></td>
+        </table>
+    </div>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB7fC-01W55Sgp5dO8TOlTYOwrYyz9o8Lw",
+      authDomain: "pir-motion-sensor-68847.firebaseapp.com",
+      databaseURL: "https://pir-motion-sensor-68847.firebaseio.com",
+      projectId: "pir-motion-sensor-68847",
+      storageBucket: "pir-motion-sensor-68847.appspot.com",
+      messagingSenderId: "1071434264344"
+    };
+  firebase.initializeApp(config);
+  </script>
+</body>
+</html>

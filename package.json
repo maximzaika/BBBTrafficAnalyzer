@@ -1,0 +1,17 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start_sensor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Maxim Zaika Sanjay Sekar",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^5.11.0",
+    "express": "^4.16.3",
+    "socket.io": "^1.7.1"
+  }
+}

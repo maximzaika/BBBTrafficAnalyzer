@@ -1,0 +1,41 @@
+.tile {
+	width: 70px;
+	height: 40px;
+	font-size: 30px;
+	font-family: Helvetica;
+	background-color: #EAEDED;
+	border: 2px solid black;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.text {
+	font-size: 25px;
+	font-family: Helvetica;
+}
+
+.tile1 {
+	width: 200px;
+	height: 40px;
+	font-size: 30px;
+	font-family: Helvetica;
+	background-color: #EAEDED;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+.control {
+	width: 90px;
+	height: 70px;
+	font-size: 15px;
+	font-family: Helvetica;
+	background-color: #D7DBDD;
+	border: 2px solid black;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+.center {
+	margin: 0 auto;
+}
